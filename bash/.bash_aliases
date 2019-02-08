@@ -30,3 +30,4 @@ alias vimi3='vim ~/.i3/config'
 alias sourcealias='source ~/.bash_alias'
 alias echodesktop='echo "/usr/share/applications 
 /home/f/.local/share/applications "'
+alias cdswtpp='cd /media/f/shared/nextcloud/Semester/WS1819/SWTPP/HA02/swtpp_ha_ws1819/'
