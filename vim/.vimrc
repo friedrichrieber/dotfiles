@@ -1,6 +1,8 @@
 :set number
 :color desert
 :set incsearch
+:autocmd BufWritePost *.md !pandoc <afile> --listing --template eisvogel -o <afile>:r.pdf
+
 "Zeug für vim-plug
 "von: https://github.com/junegunn/vim-plug
 
