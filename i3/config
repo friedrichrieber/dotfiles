@@ -51,7 +51,7 @@ bindsym Mod4+Shift+q kill
 #bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
 # new app starter 
 #bindsym Mod4+d exec rofi -show run
-bindsym Mod4+d exec i3-dmenu-desktop --dmenu='rofi -dmenu'
+bindsym Mod4+d exec i3-dmenu-desktop --dmenu='rofi -dmenu -i'
 # change focus
 bindsym Mod4+$left focus left
 bindsym Mod4+$down focus down
@@ -189,7 +189,7 @@ exec i3-config-wizard
 bindsym Mod4+o exec scrot
 bindsym Mod4+q exec terminator -e ranger -p transparent
 
-exec feh --bg-scale ~/Pictures/warthog.png
+exec feh --bg-scale ~/Pictures/halo_2_ring.jpg
 exec compton -b --config /etc/xdg/compton.conf
 for_window [class="^.*"] border pixel 0
 hide_edge_borders vertical
