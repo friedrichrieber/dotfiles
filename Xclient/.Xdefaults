@@ -1,0 +1,6 @@
+# to enable copy paste
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+# to disable keycap insert mode (which is causees problems with the copy paste workaround)
+URxvt.iso14755: false
+URxvt.iso14755_52: false
