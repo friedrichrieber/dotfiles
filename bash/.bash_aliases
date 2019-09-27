@@ -15,21 +15,28 @@ alias onenote='firefox https://www.onenote.com/notebooks?session=c6a697b4-4bde-4
 # Paths
 alias cd....='cd ../../'
 alias cd......='cd ../../../'
-alias cdalgodat='cd /home/f/repos/AlgoDat/f_g_r'
-alias cdws='cd /media/f/shared/nextcloud/Semester/WS1819'
-alias cdss='cd /media/f/shared/nextcloud/Semester/SS2019'
-alias cdnextcloud='cd /media/f/shared/nextcloud/'
+alias cdalgodat='cd /home/f/repos/f_g_r'
+alias cdws='cd ~/nextcloud/Semester/WS1819'
+alias cdss='cd ~/nextcloud/Semester/SS2019'
+alias cdnextcloud='cd ~/nextcloud/'
 alias vimalias='vim ~/.bash_aliases'
 alias lss='ls -1'
 alias lssnc='ls -1 --color=never'
 alias dirkur='PROMPT_DIRTRIM=1'
-alias cduni='cd /media/f/shared/nextcloud/Semester/'
+alias cduni='cd ~/nextcloud/Semester/'
 alias cds='cd /media/f/shared/'
 # General
 alias rm='trash'
 alias sshuni='ssh -X f_g_r@ubu18.eecsit.tu-berlin.de'
 alias vpnuni='sudo openconnect vpn.tu-berlin.de'
+# (with the gnome image viewer)
+alias showpng='eog *.png'
 # dotfiles
-alias vimi3='vim ~/.i3/config'
+alias vimi3='vim ~/.config/i3	'
 alias sourcealias='source ~/.bash_aliases'
-
+# Programms
+#alias settings='env XDG_CURRENT_DESKTOP=GNOME gnome-control-center'
+# Timer
+alias digsys='termdown "2019-09-06 09:00 UTC"'
+alias elnw='termdown "2019-09-18 09:00 UTC"'
+alias analina='termdown "2019-10-07 09:00 UTC"'
