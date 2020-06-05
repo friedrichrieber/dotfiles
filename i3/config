@@ -107,7 +107,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 # switch to workspace
-# number # here instead of $ws# so that they can be renamed 
+# number # here instead of $ws# so that they can be renamed
 bindsym Mod4+1 workspace number 1
 bindsym Mod4+2 workspace number 2
 bindsym Mod4+3 workspace number 3
@@ -167,9 +167,10 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status -c /etc/i3status.conf 
-}
+#bar {
+#        status_command i3status -c /etc/i3status.conf
+#        status_command polybar example
+#}
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -189,8 +190,18 @@ bindsym XF86AudioPrev exec playerctl previous
 
 #add lock screen
 bindsym $mod+o exec dbus-send --type=method_call --dest=org.gnome.ScreenSaver     /org/gnome/ScreenSaver org.gnome.ScreenSaver.Lock
-# Hintergrund
-exec feh --bg-scale /home/f/nextcloud/Photos/halo_2_ring.jpg
+# Background
+exec feh --bg-scale /home/f/nextcloud/Photos/atomium_wallaper.jpg
+# Audio Control in the system tray
+exec pasystray
+exec nextcloud &
+
+# always but spotify in specific workspace
+for_window [class="Spotify"] move to workspace number "10:Music"
+for_window [class="Firefox"] move to workspace number "1:Firefox"
+for_window [class="ranger"] move to workspace number "1:Firefox"
+
 exec xrdb .Xresources
 exec setxkbmap -option caps:escape
 bindsym $mod+z exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
