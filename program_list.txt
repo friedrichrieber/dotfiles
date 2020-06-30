@@ -1,0 +1,9 @@
+# apt 
+vim
+git
+tldr 
+tree
+
+# anders
+spotify - steht auf der website
+
