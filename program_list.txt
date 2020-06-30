@@ -3,6 +3,7 @@ vim
 git
 tldr 
 tree
+trash-cli
 
 # anders
 spotify - steht auf der website
