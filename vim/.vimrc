@@ -36,4 +36,15 @@ syntax on
 "remove trailing space
 autocmd BufWritePre * :%s/\s\+$//e
 
+"new folder for backupfiles
+"https://stackoverflow.com/questions/607435/why-does-vim-save-files-with-a-extension
+source $VIMRUNTIME/vimrc_example.vim
+set nobackup
+set nowritebackup
+
 nmap <F8> :TagbarToggle<CR>
+
+"set tab size to 4
+set tabstop=4
+
+"https://stackoverflow.com/questions/7894330/preserve-last-editing-position-in-vim
