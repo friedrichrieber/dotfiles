@@ -193,16 +193,18 @@ bindsym $mod+o exec dbus-send --type=method_call --dest=org.gnome.ScreenSaver   
 
 # Background
 exec feh --bg-scale /home/f/nextcloud/Photos/atomium_wallaper.jpg
+
 # Audio Control in the system tray
-exec pasystray
-exec nextcloud &
+#exec pasystray
+exec /opt/nextcloud/Nextcloud-2.6.4-x86_64.AppImage &
 
 # always but spotify in specific workspace
 for_window [class="Spotify"] move to workspace number "10:Music"
 for_window [class="Firefox"] move to workspace number "1:Firefox"
 for_window [class="ranger"] move to workspace number "1:Firefox"
 
-exec xrdb .Xresources
+#exec xrdb .Xresources
 exec setxkbmap -option caps:escape
+
 bindsym $mod+z exec i3-input -F 'rename workspace to "%s"' -P 'New name: '
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh
