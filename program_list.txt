@@ -4,7 +4,12 @@ git
 tldr 
 tree
 trash-cli
+gimp
+snapd
 
 # anders
 spotify - steht auf der website
+
+#snap 
+termdown
 

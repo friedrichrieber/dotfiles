@@ -1,22 +1,12 @@
-# Notes
-alias echomso='echo "4906407662145695@msopseudo.tu-berlin.de"'
+#Notes
+if [ -f ~/nextcloud/privat/config/notes ]; then
+    . ~/nextcloud/privat/config/notes
+fi
 
-# returns where to store .desktop files (ubuntu)
-alias echodesktop='echo "/usr/share/applications
-/home/f/.local/share/applications
-/var/lib/snapd/desktop/applications"'
-
-# Websites
-alias osiris='firefox https://teaching.inet.tu-berlin.de/services/osiris-wise1819/submissions/tests/'
-alias github='firefox https://github.com/friedrichrieber'
-alias gitlab='firefox https://gitlab.tubit.tu-berlin.de/'
-alias i3guide='firefox https://i3wm.org/docs/userguide.html'
-alias youtube='firefox https://youtube.com'
-alias reddit='firefox https://reddit.com'
-alias keep='firefox https://keep.google.com/u/0/#home'
-alias onenote='firefox https://www.onenote.com/notebooks?session=c6a697b4-4bde-4eb3-a23e-130b0590e71d&auth=1&wdorigin=poc%2condcauth1&nf=1&fromAR=1'
-alias markdown='firefox https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet'
-alias gittag='firefox https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository'
+#Websites
+if [ -f ~/nextcloud/privat/config/notes ]; then
+    . ~/nextcloud/privat/config/websites
+fi
 
 # Paths
 alias cd....='cd ../../'
@@ -44,13 +34,13 @@ alias showpng='eog *.png'
 alias vimi3='vim ~/.config/i3	'
 alias sourcealias='source ~/.bash_aliases'
 
-
 # Programms
-
 alias xclip='xclip -selection clipboard'
 
-# Timer
-alias hlb='termdown "2020-07-07 09:00 CET"'
+#Timers
+if [ -f ~/nextcloud/privat/config/timers ]; then
+    . ~/nextcloud/privat/config/timers 
+fi
 
 # Info
 alias wetter='curl v2.wttr.in'
