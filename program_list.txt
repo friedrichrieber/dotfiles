@@ -6,6 +6,7 @@ tree
 trash-cli
 gimp
 snapd
+htop
 
 # anders
 spotify - steht auf der website
