@@ -22,8 +22,7 @@ fi
 # ============================================================================
 
 # loads external file from personal cloud
-if [ -f ~/nextcloud/privat/config/notes ]; then
-if [ -f ~/nextcloud/privat/config/notes ]; then
+if [ -f ~/nextcloud/privat/config/websites ]; then
     . ~/nextcloud/privat/config/websites
 fi
 
