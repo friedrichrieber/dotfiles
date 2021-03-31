@@ -40,8 +40,8 @@ alias dirkur='PROMPT_DIRTRIM=1'
 # university Stuff
 alias cd....='cd ../../'
 alias cd......='cd ../../../'
-alias cdws='cd ~/nextcloud/Semester/WS1920'
-alias cdss='cd ~/nextcloud/Semester/SS2020'
+alias cdws='cd ~/nextcloud/Semester/WS2021'
+alias cdss='cd ~/nextcloud/Semester/SS2021'
 alias cduni='cd ~/nextcloud/Semester/'
 
 alias cdnextcloud='cd ~/nextcloud/'
